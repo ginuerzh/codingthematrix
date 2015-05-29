@@ -108,7 +108,7 @@ def add(u,v):
     True
     """
     assert u.D == v.D
-    return Vec(u.D, {k:u[k]+v[k] for k in u.D})
+    return Vec(u.D, {k:u[k]+v[k] for k in u.D if u[k]+v[k] != 0})
 
 def dot(u,v):
     """

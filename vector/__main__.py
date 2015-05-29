@@ -68,3 +68,9 @@ def least_similar(sen, voting_dict):
 
 print(least_similar('Akaka', voting_dict))
 
+
+# sum of vectors
+
+v1 = Vec({'a','b','c'}, {'a':1,'b':2,'c':3})
+v2 = Vec({'a','b','c'}, {'a':2,'b':3,'c':4})
+print(sum({2*v1,v2}))
